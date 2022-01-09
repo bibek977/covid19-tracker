@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.body {
+  background-color: #463e3e;
+  width: 100vw;
+  height: 60vw;
+}
+
+.body .topic {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2rem;
+  color: green;
+}
+
+.body .card {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body .card ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.body .card ul li {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 15rem;
+  width: 20rem;
+  background-color: aqua;
+  border: .2rem solid black;
+  border-radius: .5rem;
+  cursor: pointer;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.body .card ul li:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.body .card ul li .card__top {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.body .card ul li .card__top span {
+  font-size: 1rem;
+}
+
+.body .card ul li .card__bottom {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+/*# sourceMappingURL=covid.css.map */

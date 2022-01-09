@@ -1,0 +1,59 @@
+@import 'center';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+.body{
+    background-color: #463e3e;
+    width: 100vw;
+    height: 60vw;
+
+    .topic{
+        @include center;
+        margin-bottom: 2rem;
+        color: green;
+    }
+    
+    .card{
+
+        @include center;
+        ul{
+           display: grid;
+           grid-template-columns: repeat(3,1fr);
+           justify-content: center;
+           align-items: center;
+           column-gap: 2rem;
+           row-gap: 2rem;
+            li{
+                @include center;
+                height: 15rem;
+                width: 20rem;
+                background-color: aqua;
+                border: .2rem solid black;
+                border-radius: .5rem;
+                cursor: pointer;
+                transition: 1s;
+                
+                &:hover{
+                    transform: scale(1.1);
+                }
+                .card__top{
+                    font-size: 2rem;
+                    font-weight: 500;
+                    
+                    span{
+                        font-size: 1rem;
+                    }
+                }
+                .card__bottom{
+                    font-size: 2.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+}
